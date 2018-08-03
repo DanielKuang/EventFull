@@ -36,7 +36,7 @@
 
 <div id=screen>
     <nav class="navbar transparent sticky-top navbar-dark navbar-expand-md">
-        <a class="navbar-brand" href="#"><img src="img/_logo2.png" width="30" height="30" class="d-inline-block align-top" alt="">EventFull</a>
+        <div id="logo">eventfull</div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,45 +54,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Log In</a>
-                </li>
             </ul>
-
-            <input type="text" name="search" placeholder="Search">
-
-            <!-- <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
-
+            <div>
+                <a class="nav-link log-in-button" href="#">Log In</a>
+            </div>
         </div>
     </nav>
 
     <section id="showcase">
         <div class="container">
-            <div class="row">
-
-                <div class="col-md-6 col-sm-6">
-                    <div class="showcase-left">
-                        <img src="img/_logo2.png">
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-sm-6">
-
-                    <div class="showcase-right">
-                        <h1>Hands-free help from the Google Assistant</h1>
-                        <p>Google Home voice-activated speaker.consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                    </div>
-
-                    <br>
-
-                    <button id="btn1" class="btn btn-default btn-lg showcase-btn" type="button">Read More</button>
-
-                    <button id="btn2" class="btn btn-default btn-lg showcase-btn" type="button">Join Now!</button>
-                </div>
-
+            <div class="search-bar">
+                <input type="text" class="search-field" name="search" placeholder="find events">
             </div>
         </div>
     </section>
