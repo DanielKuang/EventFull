@@ -108,20 +108,23 @@ input:focus {
     background-color: peachpuff !important;
 }
 
-.jumbotron .lead {
-    text-align: center;
-    margin-top:35px;
-}
+/*.jumbotron .lead {*/
+    /*text-align: center;*/
+    /*margin-top:35px;*/
+/*}*/
 
 #largeBackground {
-    background-image: url(https://storywarren.com/wp-content/uploads/2016/09/space-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: static;
+    /*background: linear-gradient(to right, #4568dc, #b06ab3); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    /*background: linear-gradient(to right, #642b73, #c6426e); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    background: linear-gradient(to right, #6441a5, #2a0845); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background: linear-gradient(to right, #614385, #516395); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    /*background: linear-gradient(to right, #714e9b, #5858b2); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+
 }
 
 #myCarousel2 {
-    margin: 5em 1em 5em 1em;
+    padding-top: 5em;
+    margin: 0em 1em 5em 1em;
 }
 
 #myCarousel3 {
