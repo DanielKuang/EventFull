@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 55em;
+    height: 45em;
 }
 
 #largeBackground {
@@ -12,11 +12,11 @@
 
 .nav-item {
     padding-right: 2em;
-    font: 1.1em arial, sans-serif;
+    font: 0.9em arial, sans-serif;
 }
 
 #logo {
-    font: 3em arial, sans-serif;
+    font: 2.3em arial, sans-serif;
     padding: 0.15em;
     color: whitesmoke;
     border: thick solid rebeccapurple;
@@ -35,22 +35,22 @@
     width: 100%;
     position: relative;
     border-radius: 0em;
-    top: 5.5em;
+    top: 6.5em;
 }
 
 #showcase h1 {
-    font-size: 2.8em;
+    font-size: 2.2em;
     font-family: Tahoma;
     text-align: center;
     position: relative;
-    top: 5em;
+    top: 7.5em;
     color: #f6edff;
 }
 input {
     padding: 0.2em;
 }
 input[type="text"] {
-    font: 4em arial, purple, sans-serif;
+    font: 3.5em arial, purple, sans-serif;
 }
 input:focus {
     outline: none;
@@ -59,8 +59,8 @@ input:focus {
 #screen .log-in-button {
     outline: thick solid white;
     color: whitesmoke;
-    font-size: 1.3em;
-    height: 2em;
+    font-size: 1em;
+    height: 2.2em;
     width: 6em;
     padding-top: 0px;
     text-align: center;
@@ -68,13 +68,11 @@ input:focus {
     line-height:2em;
 }
 
-
-
 .navbar-dark {
     border:0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0);
     padding:0.6rem;
-    height:6em;
+    height:5em;
 }
 
 #showcase h1{
@@ -100,13 +98,13 @@ input:focus {
     margin-left:20px;
 }
 
-.jumbotron {
-    min-height:15em;
-    margin-bottom:0;
-    padding:0;
-    opacity: 0.9;
-    background-color: peachpuff !important;
-}
+/*.jumbotron {*/
+    /*min-height:15em;*/
+    /*margin-bottom:0;*/
+    /*padding:0;*/
+    /*opacity: 0.9;*/
+    /*background-color: peachpuff !important;*/
+/*}*/
 
 /*.jumbotron .lead {*/
     /*text-align: center;*/
@@ -231,6 +229,7 @@ input[type=text] {
 input[type=text]:focus {
     width: 20%;
 }
+
 
 
 
