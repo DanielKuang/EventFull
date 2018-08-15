@@ -50,7 +50,7 @@ input {
     padding: 0.2em;
 }
 input[type="text"] {
-    font: 3.5em arial, purple, sans-serif;
+    font: 3.5em arial, sans-serif;
 }
 input:focus {
     outline: none;
