@@ -3,39 +3,88 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height:700px;
+    height: 45em;
 }
 
-.navbar-brand {
-    font-size: 2em;
-    font-weight:bold;
-    color: #FFF !important;
+#largeBackground {
+    background: linear-gradient(to right, #4568dc, #b06ab3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .nav-item {
-  padding-right:5em;
-  font-size: 0.9em !important;
+    padding-right: 2em;
+    font: 0.9em arial, sans-serif;
+}
+
+#logo {
+    font: 2.3em arial, sans-serif;
+    padding: 0.15em;
+    color: whitesmoke;
+    border: thick solid rebeccapurple;
+}
+
+#screen .nav-link {
+    color: whitesmoke;
+}
+
+#screen .nav-link:hover {
+    box-shadow: -0.1em 0em 0px rebeccapurple;
+}
+
+
+#screen .search-field {
+    width: 100%;
+    position: relative;
+    border-radius: 0em;
+    top: 6.5em;
+}
+
+#showcase h1 {
+    font-size: 2.2em;
+    font-family: Tahoma;
+    text-align: center;
+    position: relative;
+    top: 7.5em;
+    color: #f6edff;
+}
+input {
+    padding: 0.2em;
+}
+input[type="text"] {
+    font: 3.5em arial, sans-serif;
+}
+input:focus {
+    outline: none;
+}
+
+#screen .log-in-button {
+    outline: thick solid white;
+    color: whitesmoke;
+    font-size: 1em;
+    height: 2.2em;
+    width: 6em;
+    padding-top: 0px;
+    text-align: center;
+    vertical-align: middle;
+    line-height:2em;
 }
 
 .navbar-dark {
     border:0;
-    font-family: cursive;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0);
     padding:0.6rem;
-    height:2.7em;
+    height:5em;
 }
 
 #showcase h1{
-    font-size:50px;
     margin-bottom:20px;
-  }
-  
+}
+
 #showcase img{
     width:80%;
     margin:80px 100px 50px 30px;
     height:80%;
 }
-  
+
 #showcase .showcase-right{
     margin-top:80px;
 }
@@ -46,50 +95,53 @@
 }
 
 #btn2 {
-  margin-left:20px;
+    margin-left:20px;
 }
 
-.jumbotron {
-  min-height:15em;
-  margin-bottom:0;
-  padding:0;
-  opacity: 0.9;
-  background-color: peachpuff !important;
-}
+/*.jumbotron {*/
+    /*min-height:15em;*/
+    /*margin-bottom:0;*/
+    /*padding:0;*/
+    /*opacity: 0.9;*/
+    /*background-color: peachpuff !important;*/
+/*}*/
 
-.jumbotron .lead {
-  text-align: center;
-  margin-top:35px;
-}
+/*.jumbotron .lead {*/
+    /*text-align: center;*/
+    /*margin-top:35px;*/
+/*}*/
 
 #largeBackground {
-  background-image: url(https://storywarren.com/wp-content/uploads/2016/09/space-1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: static;
+    /*background: linear-gradient(to right, #4568dc, #b06ab3); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    /*background: linear-gradient(to right, #642b73, #c6426e); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    background: linear-gradient(to right, #6441a5, #2a0845); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background: linear-gradient(to right, #614385, #516395); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    /*background: linear-gradient(to right, #714e9b, #5858b2); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+
 }
 
 #myCarousel2 {
-  margin: 5em 1em 5em 1em;
+    padding-top: 5em;
+    margin: 0em 1em 5em 1em;
 }
 
 #myCarousel3 {
-  margin: 0em 1em 5em 1em;
+    margin: 0em 1em 5em 1em;
 }
 
 #myCarousel4 {
-  margin: 0em 1em 5em 1em;
+    margin: 0em 1em 5em 1em;
 }
 
 .carousel-inner {
-  height:100%;
-  width:100%;
+    height:100%;
+    width:100%;
 }
 
 .carousel-caption {
-  position:absolute;
-  transform:translateY(-50%);
-  top:50%;
+    position:absolute;
+    transform:translateY(-50%);
+    top:50%;
 }
 
 .carousel-fade .carousel-inner .carousel-item {
@@ -97,75 +149,75 @@
     transition-property: opacity;
     transition-duration: 4s;
     transition-timing-function:linear;
-  }
-  
+}
+
 .carousel-fade .carousel-inner .active {
     opacity: 1;
-  }
-  
+}
+
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
     left: 0;
     opacity: 0;
     z-index: 1;
-  }
-  
+}
+
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
     opacity: 1;
-  }
-  
+}
+
 .carousel-fade .carousel-control {
     z-index: 2;
-  }
+}
 
 #info1 {
-  height:400px;
+    height:400px;
 }
 
 .info-left {
-  margin-top:150px;
+    margin-top:150px;
 }
 
 .info-right {
-  margin-top:150px;
+    margin-top:150px;
 }
 
 footer {
-  height:250px;
-  background-image: url(http://codex-themes.com/scalia/wp-content/uploads/2014/12/footer-background-011.jpg);
-  background-size: cover;
+    height:250px;
+    background-image: url(http://codex-themes.com/scalia/wp-content/uploads/2014/12/footer-background-011.jpg);
+    background-size: cover;
 }
 
 footer .col-md-4 {
-  margin-top:50px;
+    margin-top:50px;
 }
 
 footer .col-md-12 {
-  bottom: 0;
+    bottom: 0;
 }
 
 @media all and (transform-3d), (-webkit-transform-3d) {
     .carousel-fade .carousel-inner > .carousel-item.next,
     .carousel-fade .carousel-inner > .carousel-item.active.right {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
     .carousel-fade .carousel-inner > .carousel-item.prev,
     .carousel-fade .carousel-inner > .carousel-item.active.left {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
     .carousel-fade .carousel-inner > .carousel-item.next.left,
     .carousel-fade .carousel-inner > .carousel-item.prev.right,
     .carousel-fade .carousel-inner > .carousel-item.active {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
-  }
+}
 
 input[type=text] {
     width: 130px;
@@ -177,6 +229,7 @@ input[type=text] {
 input[type=text]:focus {
     width: 20%;
 }
+
 
 
 
