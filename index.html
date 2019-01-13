@@ -6,37 +6,18 @@
     <title>EventFull</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-<body>
-<!-- <nav class = "navbar navbar-expand-md navbar-light bg-light sticky-top">
-<div class = "container-fluid">
-    <a class= "navbar-brand" href = "#">Hello</div>
-    <button class= "navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class = "collapse navbar-collapse" id="#navbarResponsive">
-        <ul class = "navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contacts</a>
-            </li>
-        </ul>
-    </div>
-</nav> -->
+<body data-spy="scroll" data-target="#theNavbar">
 
 <div id=screen>
-    <nav class="navbar fixed-top navbar-dark navbar-expand-md">
-        <div id="logo">eventfull</div>
+    <nav id="theNavbar" class="navbar fixed-top navbar-dark navbar-expand-md">
+        <div id="logo">ƐventFull</div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -48,13 +29,13 @@
                 <li class="nav-search">
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Share</a>
+                    <a class="nav-link" href="#footer">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#info1">Contact</a>
                 </li>
             </ul>
             <div>
@@ -64,10 +45,12 @@
     </nav>
 
     <section id="showcase">
-        <h1> (...try entering a time, place, or tag!)</h1>
+        <!--weather icon on top-->
+        <h1> 11:11 </h1>
+        <h2> Brooklyn, New York </h2>
         <div class="container">
             <div class="search-bar">
-                <input type="text" class="search-field" name="search" placeholder="find events">
+                <input type="text" class="search-field" name="search" placeholder="Welcome Back!">
             </div>
         </div>
     </section>
@@ -75,360 +58,178 @@
 </div>
 
 <div id="largeBackground">
+    <div id="pageWrap"></div>
 
-    <!--<div class="jumbotron">-->
-        <!--<h2 class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</h2>-->
-    <!--</div>-->
+        <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="12000">
 
-    <div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="14000">
+            <!-- <ol class="carousel-indicators">
+                <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel2" data-slide-to="1"></li>
+                <li data-target="#myCarousel2" data-slide-to="2"></li>
+            </ol> -->
+            <div id="box_myCarousel2">
+                <h1>Movies!</h1>
+                <p>Hit the Theaters for these Upcoming Movies!</p>
+                <hr>
 
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel2" data-slide-to="1"></li>
-            <li data-target="#myCarousel2" data-slide-to="2"></li>
-        </ol>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="EventFull">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="EventFull">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="EventFull">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+                    <div class="carousel-item">
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+                    <div class="carousel-item">
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/map_placeholder.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                </div>
+
+                <div class=carousel-control>
+
+                    <a class="carousel-control-prev" href="#myCarousel2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#myCarousel2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
                 </div>
             </div>
-
-            <div class="carousel-item">
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class=carousel-control>
-
-            <a class="carousel-control-prev" href="#myCarousel2" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-
-            <a class="carousel-control-next" href="#myCarousel2" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-
-        </div>
-    </div>
-
-    <div id="myCarousel3" class="carousel slide" data-ride="carousel" data-interval="15000">
-
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel3" data-slide-to="1"></li>
-            <li data-target="#myCarousel3" data-slide-to="2"></li>
-        </ol>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class=carousel-control>
-
-            <a class="carousel-control-prev" href="#myCarousel3" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-
-            <a class="carousel-control-next" href="#myCarousel3" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
     </div>
-
-    <div id="myCarousel4" class="carousel slide" data-ride="carousel" data-interval="13000">
-
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel4" data-slide-to="1"></li>
-            <li data-target="#myCarousel4" data-slide-to="2"></li>
-        </ol>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item">
-                <div class="card-deck">
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class=carousel-control>
-
-            <a class="carousel-control-prev" href="#myCarousel4" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-
-            <a class="carousel-control-next" href="#myCarousel4" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-
-        </div>
-    </div>
-
-    <div id= "intro-card" class="card bg-dark text-white">
-        <img class="card-img" src="img/lool.jpg" alt="Card image">
-        <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text">Last updated 3 mins ago</p>
-        </div>
-    </div>
-
+    <!--end-->
 </div>
 
+<!--
 <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="10000" data-pause="false">
 
     <ol class="carousel-indicators">
@@ -473,21 +274,25 @@
 
     </div>
 </div>
+-->
 
 <section id="info1">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-6">
                 <div class="info-left">
-                    <h2>Find Us!</h2>
-                    <p>Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                    <h1>Keep In Touch!</h1>
+                    <h3>Got More Questions? Want More Events? Find Us!</h3>
                 </div>
             </div>
             <div class="col-md-6 col-sm-6">
                 <div class="info-right">
-                    <img src="img/image2.png">
-                    <br>
-                    <a class="btn btn-default btn-lg">Read More</a>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#"><i class= "fa fa-google-plus"></i></a>
+                    <a href="#"><i class= "fa fa-instagram"></i></a>
+                    <a href="#"><i class= "fa fa-youtube"></i></a> 
+                    <a href="#"><i class= "fa fa-snapchat"></i></a>                   
                 </div>
             </div>
         </div>
@@ -495,44 +300,434 @@
 </section>
 
 <footer>
-    <div class="container-fluid padding">
+    <div id="footer" class="container-fluid padding">
 
         <div class="row text-center">
             <div class="col-md-4">
-                <h3>Help?</h3>
+                <h3>Our Contracts</h3>
+                <hr class="light">
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                    Terms of Use
+                </button>
+      
+                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Terms of Service</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                                <h4>Hello There!</h4> 
+                                <p>Welcome to EventFull! The Terms of Service including our Privacy Policy, Code of Conduct and Disclaimers posted under "Terms & Privacy" are contracts
+                                    between you and EventFull. By using this site such as creating an account or posting content to our community,
+                                you are hereby agreeing to these Terms of Service. If you don’t agree to any of these listed terms, you may not use our service.</p>
+                                <hr>
+                                <h4>What Are Our Rights?</h4>
+                                <p> First and foremost, we reserve all rights in our content and our site (i.e the presentation of our site and services).
+                                    The usage of any of our content (i.e our trademarks) is not permitted without EventFull's permission. 
+                                    If you receive permission to use our content, please do not utilize them in any way to influence another product or your business.</p>
+                                        
+                                <p> We reserve the right to change or disable access to any aspect of our services anytime. This can happen with or without notice.
+                                    In addition, we may also remove any part of your submitted content for any reason. </p>
+                                
+<!-- IMPORTANT: REVIEW THIS BEFORE RELEASING-->
+                                <p> We can keep, access or disclose any information as we believe is 
+                                    necessary and reasonable to:
+                                    <ul>
+                                    <li> satisfy any applicable law, regulation, legal process or governmental request, </li>
+                                    <li> enforce the Terms of Service, including investigation of potential violations </li>
+                                    <li> detect, prevent, or otherwise address fraud, security or technical issues, </li>
+                                    <li> respond to user support requests, or </li>
+                                    <li> protect the rights, property or safety of the Services, its users and the public. </li></ul></p>
+<!--END OF AREA IN QUESTION-->
+                                <hr>
+                                <h4>Minimum Age for an Account</h4>
+                                <p>To apply for an account, you need to be at least 15 years old.
+                                    We will terminate an account if we learn that the subject in question violated this rule. We apologize for the 
+                                inconvenience. </p>
+                                <hr>
+                                <h4>Deleting Your Account</h4>
+                                <p> Upon closing your account, it will first be deactivated and then deleted in 30 days. 
+                                    While your account is deactivated, all of your comments or activities 
+                                    available to our community will be anonymized and remain where they are.
+                                    Events that you've made will be removed.
+
+                                <p> For the 30 days after deactivation, you can still restore your account (whether or not it was purposefully deleted), which will link back your 
+                                    comments, activities, events and content back to your account. We will notify you by the email address linked to 
+                                    your account on these circumstances or the next time you attempt to access your account. After those 30 days, we will permanently 
+                                    delete your account from our systems. </p>
+                                <hr>
+<!-- IMPORTANT: REVIEW THIS BEFORE RELEASING-->
+                                <h4>Serving Ads</h4>
+                                <p> We make the Services available without charge. To be able to continue to do so, we display third party advertisements 
+                                    and promotions on or in connection with the Service. Since the advertising we provide is based upon information 
+                                    provided by third parties, we will not be responsible or liable for any loss or damage of any sort incurred by you 
+                                    as a result of any advertisements. Your interactions with advertisers found on or through the Service, including, 
+                                    without limitation, all reliance upon advertising, all commercial transactions and legal obligations associated 
+                                    with such advertisements, are solely between you and the advertisers. </p>
+                                
+                                <p> If you wish to find out more information about the practices of these third party advertisers and your choices 
+                                    about how your personal information may be used by them, please visit www.networkadvertising.org. </p>
+                                <hr>
+                                <h4>Disclaimers, Limitations of Liability and Indemnification</h4>
+                                <p> Each of the subsections below only applies up to the maximum extent permitted under applicable law. Some jurisdictions do not allow the disclaimer of implied warranties or the limitation of liability in contracts, 
+                                and as a result the contents of this section may not apply to you. Nothing in this section 
+                                is intended to limit any rights you may have which may not be lawfully limited. </p>
+
+                                <p> No warranty. Your use of our Services and any content is solely at your own risk and discretion. 
+                                    They are provided to you “as is” and “as available”. That means they don’t come with any warranty 
+                                    of any kind, express or implied. EventFull specifically disclaims any implied warranty of merchantability, 
+                                    merchantable quality, fitness for a particular purpose, availability, security, title or 
+                                    non-infringement, and any warranties implied by any course of dealing or performance. </p>
+
+                                <p> Responsibility for Content. All content, whether publicly posted or privately transmitted, is the sole responsibility 
+                                    of the person who originated such content. We may not monitor or control the content posted via the Services and 
+                                    we cannot take responsibility for such content. We do not endorse, support, represent or guarantee the completeness, 
+                                    truthfulness, accuracy, or reliability of any content or communications posted via the Services or endorse any opinions 
+                                    expressed via the Services. You understand that by using the Services, you may be exposed to content that might be offensive, 
+                                    harmful, inaccurate or otherwise inappropriate, or in some cases, postings that have been mislabeled or are otherwise deceptive. </p>
+
+                                <p> Release. When you use the Services, you release EventFull from claims, damages, and demands of every kind — known or unknown, suspected 
+                                    or unsuspected, disclosed or undisclosed — arising out of or in any way related to 
+                                    (a) disputes between users, or between users and any third party relating to the use of the Services and 
+                                    (b) the Services. </p>
+
+                                <p> EventFull’s liability to you. EventFull won’t be liable to you for any damages that arise from your use of, or in connection with, 
+                                    the Services and any content. This exclusion includes: (a) where the Services are hacked or unavailable, (b) all types 
+                                    of damages (direct, indirect, punitive, incidental, consequential, special or exemplary), whatever the type of claim 
+                                    or loss (breach of contract, tort (including negligence), breach of warranty, or any other claim or loss), (c) any lost 
+                                    profits, data or revenues, or (d) any conduct or content of other users or third parties on the Site or the Services. 
+                                    In no event shall EventFull’s liability for damages be in excess of (in the aggregate) one hundred Canadian dollars ($100.00). </p>
+
+                                <p> Your liability to EventFull. If you do something that gets us sued, or break any of the promises you make in these Terms of Service, 
+                                    you shall compensate us for any liabilities, losses, claims, and expenses (including reasonable legal fees and costs) that arise from 
+                                    or relate to your use or misuse of the Services. We reserve the right to assume the exclusive defense and control of any matter otherwise 
+                                    subject to this clause, in which case you agree that you’ll cooperate and help us in asserting any defenses. </p>
+
+                                <p> Third party websites. The Site and Services may contain links to other websites; for instance, stories, user profiles, and other posts 
+                                    may link to other sites. When you access third-party websites, you do so at your own risk. We don’t control or endorse those sites. </p>
+                                <hr>
+<!--END OF AREA IN QUESTION-->
+        
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong2">
+                    Privacy Policy
+                </button>
+      
+                <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Terms of Service</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+<!--START-->
+                                <h3>We are Committed.</h3> 
+                                <p> At EventFull Corporation, we are committed to 
+                                    protecting your privacy and keeping your information 
+                                    safe. EventFull processes information about you in a 
+                                    few different ways. This Privacy Policy explains 
+                                    how we collect, use, disclose and keep information 
+                                    that can identify you (“Personal Information”) when you 
+                                    create a EventFull account and use EventFull.com (the “Site”), 
+                                    or our mobile applications, to post content to the EventFull 
+                                    community, including stories you create, comments and messages 
+                                    (the “Services”). </p>
+
+                                <p> Note that our Terms of Service apply to this Privacy Policy. 
+                                    By creating an account with EventFull, using the Services, or 
+                                    submitting any Personal Information Information via the Services, 
+                                    you are consenting to the collection, use and disclosure of your 
+                                    Personal Information as described below in this Privacy Policy. 
+                                    If you do not consent to the use of your Personal Information in 
+                                    these ways, please stop using the Services. </p>
+                                <hr>
+                                <h4>What is Personal Information?</h4>
+                                <p>"Personal Information" is any information that can identify you. 
+                                    This may include, but is not limited to, your name, mailing address, 
+                                    telephone number, email address, Internet Protocol (“IP”) address, age, 
+                                    gender, marital status, health information, financial status, credit card 
+                                    information and credit history.</p>
+                                <hr>
+<!--END-->
+<!-- Don't forget to finish this section-->
+                                <h4>What do we collect and Why do we use it?</h4>
+                                <p>...TTYL.</p>
+                                <hr>
+<!--END OF SECTION IN QUESTION-->
+<!--START-->
+                                <h4>Why do we collect and use your email?</h4>
+                                <p> Oh my gosh sherlock, to talk to you, duh! We use email as an important way to communicate with you. 
+                                    You can manage your email notification preferences, 
+                                    such as messages and follower alerts, by adjusting your preferences 
+                                    in the Notifications section of your account Settings. You may also 
+                                    opt out or unsubscribe from any future email communications from within 
+                                    a link provided in each email we send you. However, please note that in 
+                                    all cases you will continue to receive all system e-mails (e.g. those 
+                                    regarding forgotten user passwords) and legal notices (e.g. updates to 
+                                    our policies) from us.</p>
+                                <hr>
+<!--END-->
+<!-- Don't forget to finish this section-->
+                                <h4>What Others Can See?</h4>
+                                <p> Anything that isn't private.</p>
+                                <hr>
+<!--END OF SECTION IN QUESTION-->
+<!--START-->
+                                <h4>How Your Information is Shared.</h4>
+                                <p> We may share your Personal Information with third-party service providers, but only where 
+                                    it’s necessary to provide any of the Services to you (e.g., email providers, server providers, etc.). 
+                                    When we share data with third-party services that support our delivery of the Services, 
+                                    we require that they protect your Personal Information to the same standards we do. </p>
+
+                                <p> We do not and will not release, rent or sell your Personal Information, except in the 
+                                    following very limited situations:
+                                <ul>                                        
+                                    <li>To comply with an applicable law (including investigations of any crime), 
+                                        regulation, legal process or enforceable governmental request; </li>
+                                        
+                                    <li>To enforce or apply our Terms of Use and other policies, including 
+                                        investigation of potential violations; </li>
+                                        
+                                    <li>To protect the rights, property, or safety of EventFull, our employees, 
+                                        our users, or the public; </li>
+                                        
+                                    <li>If EventFull is involved in a merger, acquisition or asset sale, in 
+                                        which case we will continue to ensure the confidentiality of any 
+                                        Personal Information and give affected users notice before Personal 
+                                        Information is transferred or becomes subject to a different privacy policy.</li>
+                                        
+                                    <li>We never post anything to your Facebook or other third-party accounts without your permission.</li>
+                                </ul>
+                                </p>
+                                <hr>
+                                <h4>Where do we store your Personal Information?</h4>
+                                <p> Our Services are mainly provided from our offices in 
+                                    Canada. However, Personal Information that you submit 
+                                    through the Services may be transferred to countries 
+                                    other than where you reside (for example, to our servers 
+                                    in the United States) for processing and storage. In 
+                                    addition, our third party service providers also may 
+                                    process or store your Personal Information on servers 
+                                    outside your country, including in Canada or the US. </p>
+
+                                <p>By using any of the Services, or submitting any Personal 
+                                    Information via the Services, you authorize EventFull and 
+                                    its authorized service providers to use and process your 
+                                    Personal Information in these countries. Please be aware 
+                                    that the privacy protections and the rights of authorities 
+                                    and Government agencies to access your personal information 
+                                    in some of these countries may not be equivalent to those in 
+                                    your country. </p>
+                                <hr>
+                                <h4>Access to your personal information</h4>
+                                <p> If you wish to access any Personal Information that we hold about you, 
+                                    or request that we correct or delete the Personal Information that we 
+                                    hold about you, you may contact us via email at privacy@EventFull.com. 
+                                    We will comply with such requests to the extent required by law or our 
+                                    policies, and subject to any limitations in our systems. </p>
+
+                                <p> To access, modify or delete the Personal Information you have provided 
+                                    to us, please log in and update your profile. </p>
+                                <hr>
+                                <h4>How does EventFull protect my Personal Information?</h4>
+                                <p>We are continuously implementing and updating physical, organizational, 
+                                    contractual and technological security measures to protect your Personal 
+                                    Information from loss, theft, unauthorized access, disclosure, copying, 
+                                    use or modification. They only employees who are granted access to your 
+                                    Personal Information are those with a business “need-to-know” or whose 
+                                    duties reasonably require such information. On all EventFull platforms, 
+                                    we support encryption on all transmissions to protect Personal Information 
+                                    submitted on our Site.</p>
+                                <hr>
+                                <h4>What happens to your Personal Information when you leave EventFull?</h4>
+                                <p> If you close your account, it will first be deactivated for a period of six months. 
+                                    When your account is deactivated, while it is not viewable on EventFull, all of your 
+                                    public contributions and comments to the EventFull community will remain (except that 
+                                    they will be anonymized). </p>
+
+                                <p> For six months after deactivation, it is still possible to restore your account if 
+                                    it was accidentally or wrongfully deactivated, including re-associating your 
+                                    comments and contributions to your profile. After six months, we permanently 
+                                    delete your Personal Information from our systems, except that your anonymized 
+                                    comments and contributions will remain on the Service.</p>
+                                <hr>
+                                <h4>Non-personal information</h4>
+                                <p> EventFull uses cookies, tracking pixels 
+                                    and similar technologies on our Service to collect information that cannot identify 
+                                    you as an individual (“non-personal information”) that helps us provide our Service 
+                                    to you and to learn how our Service is used. We also use these technologies to help 
+                                    deliver promotional messages and ads for relevant EventFull products and services. </p>
+                                    
+                                <p> When you visit the Site or use the Service, we use cookies and we also automatically 
+                                    collect various types of information by the use of “clear gifs” or “web beacons”. 
+                                    Cookies allow us to “remember” what you have done before and personalize the Service 
+                                    for you, and the automatically collected data provides us with Site usage statistics 
+                                    and other traffic data that is used to help diagnose problems, analyze trends and 
+                                    administer the Site and the Services. When placing cookies or using web beacons and 
+                                    clear gifs, EventFull does not collect Personal Information, and we do not combine the 
+                                    information we do collect by these means with other Personal Information to tell us 
+                                    who you are or what your screen name or e-mail address is. Some of our business partners, 
+                                    like our advertisers, may use cookies on our Site. We have no access to, or control over, 
+                                    these cookies. </p>
+                                        
+                                <p> We may share non-personal information publicly and with various third parties like publishers 
+                                    or advertisers. For example, we may share information with advertisers or publicly to show 
+                                    trends about the general use of our Services.</p>
+                                <hr>
+                                <h4>Changes</h4>
+                                <p>Our Privacy Policy may change from time to time. We will not reduce your rights under 
+                                    this Privacy Policy without your explicit consent; in other cases, please note that 
+                                    your continued use of the Services after any change means that you agree with, and 
+                                    consent to be bound by, the revised Privacy Policy. If you disagree with any changes 
+                                    in this Privacy Policy and do not wish your Personal Information to be subject to the 
+                                    revised Policy, you will need to close your account and/or stop using the Services.</p>
+                                <hr>
+                                <h4>Contact Us</h4>
+                                <p>Check out HartekSabharwal@CornellFlakes.com</p>
+<!--END-->                         
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong3">
+                    Code of Conduct
+                </button>
+                
+                <div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Code of Conduct</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+<!--Start-->
+                            <h3>Proper Conduct in our Community</h3>
+                            <p> EventFull members share their passion for reading and writing by 
+                                sharing stories and interacting with each other through comments, 
+                                chat and club discussions. The way we treat one another shapes the 
+                                type of community we are building together. The Code of Conduct is 
+                                designed to ensure that everyone understands what the EventFull community 
+                                is all about and the values we treasure. Our goal is to create a safe, 
+                                fun and caring environment for story lovers.</p>
+                            <hr>
+
+                            <h4>DO Respect Others Views And Opinions</h4>
+                            <p> The EventFull Community is a diverse group with different opinions and views. 
+                                But it means that everybody needs to be tolerant and respect people whose 
+                                ideas are different to their own. Of course, if you feel that someone is 
+                                expressing views or opinions that are offensive, defamatory, abusive or 
+                                inappropriate, you can report them by clicking on the report button or 
+                                submit a request at support.EventFull.com.</p>
+                            <hr>
+
+                            <h4>DO Respect The Privacy And Safety Of Others</h4>
+                            <p> Revealing personally identifying information about someone else, such as 
+                                their name, address, email address or phone number is strictly prohibited. 
+                                Behaviour that endangers the safety and integrity of the EventFull community 
+                                or is in any way malicious may result in permanent banning.</p>
+                            <hr>
+
+                            <h4>DON’T Spam</h4>
+                            <p> There’s a fine line between promoting your stories and spamming. 
+                                The more you can make your message personal and relevant, the 
+                                less likely you are to be reported for spam. Don’t promote your 
+                                stories as a comment on other people’s stories. Do not link to
+                                e-commerce or other similar sites, or post comments to promote 
+                                other products or services; we consider this spam and nobody 
+                                likes spam. Comments, messages and club posts sent via bots 
+                                will result in immediate deletion of accounts. However, you 
+                                are welcomed to link your published novels that are for sale 
+                                on your own profile.</p>
+                            <hr>
+
+                            <h4>DON’T Rant, Flame, Troll and Fight</h4>
+                            <p>EventFull is a friendly and welcoming environment for everyone to enjoy. 
+                                It's not the place for you to express rage from other parts of your life. 
+                                Inappropriate behaviour, including abusive, defamatory, obscene, 
+                                racist or offensive comments, will result in having your account deleted.</p>
+                            <hr>
+
+                            <h4>DON’T Pretend To Be Somebody Else</h4>
+                            <p>Please don’t register accounts in the name of another person, or using someone 
+                                else’s logo (trademark), even if this is meant as a tribute. If you feel 
+                                that someone is impersonating you on EventFull, or is infringing your trademark, 
+                                you can tell us about it by submitting a request on support.EventFull.com.</p>
+                            <hr>
+
+                            <h4>If You Break These Rules...</h4>
+                            <p>Please take these rules seriously. Flag any inappropriate content you see. 
+                                Inappropriate content will be removed along with any replies. 
+                                Repeat offenders will have their accounts deleted. In most cases, 
+                                we'll send you a warning before we take other measures. Remember, 
+                                EventFull is a fun and caring community where everyone feels 
+                                comfortable and respected - it’s up to all of us to make sure 
+                                this happens. We think this is fair but if you don't agree, maybe 
+                                EventFull is not the place for you.</p>
+                            <hr>
+
+                            <h4>Any Suggestions?</h4>
+                            <p>Please Contact Harteksabharwal@cornellflakes.com</p>
+                            <hr>
+<!--End-->
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-md-4">
+                <h3>FAQ</h3>
                 <hr class="light">
                 <p>Email:harteksabharwal@cornellflakes.com</p>
             </div>
 
             <div class="col-md-4">
-                <h3>Help?</h3>
+                <h3>About Us</h3>
                 <hr class="light">
                 <p>Email:harteksabharwal@cornellflakes.com</p>
             </div>
 
-            <div class="col-md-4">
-                <h3>Help?</h3>
-                <hr class="light">
-                <p>Email:harteksabharwal@cornellflakes.com</p>
-            </div>
+            <hr>
 
-            <div class="col-12 social padding">
-                <a href="#"><i class= "fab fa-facebook"></i></a>
-                <a href="#"><i class= "fab fa-twitter"></i></a>
-                <a href="#"><i class= "fab fa-google-plus-g"></i></a>
-                <a href="#"><i class= "fab fa-instagram"></i></a>
-                <a href="#"><i class= "fab fa-youtube"></i></a>
-            </div>
-
-            <div class="col-md-12">
+            <!--<div class="col-md-12">
                 <hr class="light">
-                <h5>&copy; ___.com</h5>
-            </div>
+                <h5>&copy; EventFull.com</h5>
+            </div>-->
 
         </div>
 
     </div>
 </footer>
+<!-- BELOW IS THE SCRIPT FOR SCROLL VIEW-->
 
 <script
         src="https://code.jquery.com/jquery-3.2.1.js"
@@ -540,22 +735,28 @@
         crossorigin="anonymous"></script>
 <script>
     window.sr = ScrollReveal();
-    sr.reveal('.showcase-left', {
-        duration: 2000,
-        origin:'top',
-        distance:'300px'
+    sr.reveal('#showcase h1', {
+        duration: 1700,
+        delay:500,
+        origin:"top",
+        distance: '100px',
     });
-    sr.reveal('.showcase-right', {
+    sr.reveal('#showcase h2', {
         duration: 2000,
-        origin:'right',
-        distance:'300px'
+        delay:1300,
+        origin:"top",
+        distance: '30px',
     });
-    sr.reveal('.showcase-btn', {
+    sr.reveal('.search-field', {
         duration: 2000,
-        delay: 1000,
-        origin:'bottom'
+        delay: 1600,
     });
     sr.reveal('#myCarousel2', {
+        duration: 2000,
+        origin:'bottom',
+        distance:'300px'
+    });
+    sr.reveal('#box_myCarousel2', {
         duration: 2000,
         origin:'bottom',
         distance:'300px'
@@ -584,7 +785,9 @@
     });
 </script>
 
-<script>
+
+
+<!-- <script>
     $(function() {
         // Smooth Scrolling
         $('a[href*="#"]:not([href="#"])').click(function() {
@@ -600,7 +803,7 @@
             }
         });
     });
-</script>
+</script> -->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
